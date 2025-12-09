@@ -2,9 +2,9 @@
 :root {
   --primary-color: #8B0000;
   --secondary-color: #D4AF37;
-  --background-light: #F5F5DC;
-  --background-dark: #1A1A1A;
-  --text-light: #333333;
+  --background-light: #2c2c2c;
+  --background-dark: #1a1a1a;
+  --text-light: #E0E0E0;
   --text-dark: #E0E0E0;
   --brand-red-dark: #482323;
   --brand-text-subtle: #c99292;
@@ -26,7 +26,7 @@ body.dark {
 
 /* Header Styles */
 header {
-  background-color: rgba(245, 245, 220, 0.8);
+  background-color: rgba(44, 44, 44, 0.8);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   position: sticky;
