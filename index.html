@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="dark" lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>หน้าหลัก - ร้านของฉัน อาหารตามสั่ง</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&amp;family=Prompt:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#8B0000",
+            "secondary": "#D4AF37",
+            "background-light": "#F5F5DC",
+            "background-dark": "#1A1A1A",
+            "text-light": "#333333",
+            "text-dark": "#E0E0E0"
+          },
+          fontFamily: {
+            "display": ["Prompt", "sans-serif"],
+            "heading": ["Mitr", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Mitr', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="flex flex-1 justify-center">
+        <div class="layout-content-container flex w-full flex-col max-w-[1200px] flex-1">
+          <header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-secondary/20 bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80 md:px-10">
+            <div class="flex items-center gap-4 text-primary">
+              <h2 class="font-heading text-xl font-bold leading-tight tracking-[-0.015em]">ร้านของฉัน อาหารตามสั่ง</h2>
+            </div>
+            <div class="hidden flex-1 items-center justify-end gap-8 md:flex">
+              <div class="flex items-center gap-9">
+                <a class="font-display text-sm font-medium leading-normal text-secondary" href="index.html">หน้าแรก</a>
+                <a class="font-display text-sm font-medium leading-normal text-text-light dark:text-text-dark" href="pages/menu.html">เมนู</a>
+                <a class="font-display text-sm font-medium leading-normal text-text-light dark:text-text-dark" href="pages/about.html">เกี่ยวกับเรา</a>
+                <a class="font-display text-sm font-medium leading-normal text-text-light dark:text-text-dark" href="pages/contact.html">ติดต่อ</a>
+                <a class="font-display text-sm font-medium leading-normal text-text-light dark:text-text-dark" href="pages/promotion.html">โปรโมชั่น</a>
+                <a class="font-display text-sm font-medium leading-normal text-text-light dark:text-text-dark" href="pages/review.html">รีวิว</a>
+              </div>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">โทรเลย</span>
+              </button>
+            </div>
+            <button class="md:hidden flex items-center justify-center rounded-lg p-2 text-text-light dark:text-text-dark mobile-menu-toggle">
+              <span class="material-symbols-outlined">menu</span>
+            </button>
+          </header>
+          <main class="flex flex-col gap-10 md:gap-16 pb-16">
+            <div class="@container">
+              <div class="flex min-h-[60vh] flex-col gap-6 bg-cover bg-center bg-no-repeat items-center justify-center p-4 text-center" data-alt="A delicious plate of Thai-style rice with various toppings" style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC5qLPM2rMsTVH-IGYG6jn9Tt1ks9_0lmOiNHNPMeSRRWWY7JahzEn-9Xq6khQiWTr6mWbEMAL2kDmvs3gKaJ9j7mNnlh5TJC1_3-Ny03HJ-ZeLmecUbzs1fwsx68cr6x0z8rCa7unkqgXEb-BytG9bIJCpdNWVHlUS6KIjBKrRQsF2IFgwT3GngWAy0H5Snr1YqyJUkvVs-k7FNbgK_x0V6o8hSm36bvyA_j8Tr7p61eI2Y0sUF57-XQ0b38GxJFvj3765X3wGvguV");'>
+                <h1 class="font-heading text-4xl font-bold leading-tight tracking-tight text-white md:text-6xl">อาหารตามสั่งรสเลิศ<br/>คุณภาพคับแก้ว</h1>
+                <p class="font-display text-lg text-white mt-4 max-w-2xl">ยินดีต้อนรับสู่ร้านอาหารตามสั่งคุณภาพ บริการด้วยใจ อาหารอร่อย สะอาด สดใหม่ทุกวัน</p>
+              </div>
+            </div>
+            <div class="px-4 md:px-10 flex flex-col items-center gap-12">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center max-w-5xl">
+                <div class="card-image" data-alt="A photo representing the restaurant's heritage and tradition" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCg4tFz40m6MYtGSQAboFa-tT1aQ5_DihR812ZBEXel-yy1b5e2-a5bH_nzZk9-6e5jjY6zTx1hnODILV6YG2Jrl0YmVzGTDBO8IIMMYsJNV3zXs1eCjXTg-zbKsPJ_AIKCifJ6NWkD9qNCLJB2RMR975SHGCf1ukIlbpzf_snnjdc9hSeSSbeh20m4mVDSz4HJa1zX52udKX9QqB3sp5FSvKI2v3VAlJ5Oz4SMbj_qKwfYXe7oERE7luVeAXZkCbMHfxCc3auj7NIm"); filter: grayscale(100%);'></div>
+                <div class="flex flex-col gap-4 text-center md:text-left">
+                  <h2 class="font-heading text-[28px] font-bold leading-tight text-primary">เรื่องราวของเรา</h2>
+                  <p class="font-display text-base font-normal leading-relaxed text-text-light dark:text-text-dark">
+                    เราเริ่มต้นจากความชื่นชอบในอาหารไทยต้นตำรับ ที่ใส่ใจในทุกขั้นตอน ตั้งแต่การคัดสรรวัตถุดิบคุณภาพ การปรุงรสอย่างพิถีพิถัน ไปจนถึงการบริการที่อบอุ่น ทำให้อาหารตามสั่งของเรามีรสชาติที่เป็นเอกลักษณ์และเป็นที่ชื่นชอบของลูกค้า
+                  </p>
+                  <a href="https://www.google.com" target="_blank" class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] w-full sm:w-auto mt-4 self-start">
+                    <span class="truncate">อ่านเพิ่มเติม</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="px-4 md:px-10 flex flex-col items-center gap-8">
+              <h2 class="font-heading text-[28px] font-bold leading-tight text-primary text-center">จุดเด่นของเรา</h2>
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full">
+                <div class="flex flex-col items-center gap-4 rounded-lg border border-secondary/20 bg-background-light p-6 text-center dark:bg-background-dark">
+                  <span class="material-symbols-outlined text-4xl text-secondary">menu_book</span>
+                  <h3 class="font-heading text-lg font-semibold text-text-light dark:text-text-dark">สูตรเด็ด</h3>
+                  <p class="font-display text-sm leading-relaxed text-text-light/80 dark:text-text-dark/80">น้ำซอสรสเข้มข้นที่คิดค้นเป็นสูตรเฉพาะตัว</p>
+                </div>
+                <div class="flex flex-col items-center gap-4 rounded-lg border border-secondary/20 bg-background-light p-6 text-center dark:bg-background-dark">
+                  <span class="material-symbols-outlined text-4xl text-secondary">local_fire_department</span>
+                  <h3 class="font-heading text-lg font-semibold text-text-light dark:text-text-dark">ทำสดใหม่ทุกวัน</h3>
+                  <p class="font-display text-sm leading-relaxed text-text-light/80 dark:text-text-dark/80">วัตถุดิบคุณภาพ เลือกสรรอย่างพิถีพิถัน</p>
+                </div>
+                <div class="flex flex-col items-center gap-4 rounded-lg border border-secondary/20 bg-background-light p-6 text-center dark:bg-background-dark">
+                  <span class="material-symbols-outlined text-4xl text-secondary">eco</span>
+                  <h3 class="font-heading text-lg font-semibold text-text-light dark:text-text-dark">สะอาด ปลอดภัย</h3>
+                  <p class="font-display text-sm leading-relaxed text-text-light/80 dark:text-text-dark/80">ห้องครัวสะอาดตามหลักสุขอนามัย ปลอดภัยต่อผู้บริโภค</p>
+                </div>
+              </div>
+            </div>
+            <div class="px-4 md:px-10 flex flex-col items-center gap-8">
+              <h2 class="font-heading text-[28px] font-bold leading-tight text-primary text-center">เมนูแนะนำ</h2>
+              <div class="grid w-full max-w-5xl grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="flex flex-col gap-2 rounded-lg border border-secondary/20 bg-background-light p-4 text-center dark:bg-background-dark">
+                  <div class="card-image" data-alt="Pad Thai dish" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaf2NJ9h7HJI6-xV7t1TSB8gmpiR98Qwcq0bdrXST_gcn-9oCaeX-NpnjEcoWPrQX03QAi369voX0zheOecWLFSHH_8jB0lh5SyMB4AVmj-IAzyG4UIFPp8dFGMP56t3BDO_t0Tg-vfze5DtvcUQsShNd7Y61lUZdg9ViC04u4ZkVGyi595NBAiKQd1olm9aQMSASLDHG3YVYEZbczvhgWG87thalAyIPTJJt1Y17dm3bIlYod60zH2fiSBPZpzU9ERQhPaIKAyB9R");'></div>
+                  <h3 class="font-heading text-lg font-semibold text-text-light dark:text-text-dark mt-2">ผัดไทยกุ้งสด</h3>
+                </div>
+                <div class="flex flex-col gap-2 rounded-lg border border-secondary/20 bg-background-light p-4 text-center dark:bg-background-dark">
+                  <div class="card-image" data-alt="Rice with fried egg dish" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtW-nOFcNeIPfzX65njjOLnpZoD9OUKbCdHifLgKsQ3wYiV1NUEh8YPIBa_fVUieVPfGTP-NVsieAP5Hb5a39m-XCrWE8l9kbmnORuWUnwfv3g7pmtLACBkI6e95eKYy7nJcm4l74-srFwvQOBwLI721QItdEL_s6imrKQsAQ6uabgLTtPlJs61utvwE982PMQXCjy5o5hmNovydPIiSi7Jr6ENanPFiZQ_j0TCCXhDLhsWJLy5RC-kIoOTF4or2SMV7qA577-BCss");'></div>
+                  <h3 class="font-heading text-lg font-semibold text-text-light dark:text-text-dark mt-2">ข้าวไข่เจียว</h3>
+                </div>
+                <div class="flex flex-col gap-2 rounded-lg border border-secondary/20 bg-background-light p-4 text-center dark:bg-background-dark">
+                  <div class="card-image" data-alt="Fried rice dish" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_Jgn6utkWYHBv8gFz2ez7ZZX0ZttgJ_VXi9jtb0k2sbXtyN4gLcIdkxEad4iHl7ANIOtC5GE2-A5A1DRMd_yBIDHwNZvoACWmfhR_au6zy1qxU6MlABpkqjXwcy7LvEPlBsqK-2g-YfXMv8tpQATMehhEXyXhIslu2p0KxDTKQoZGyCC9hh4FJUJ5tGfGV9NdGefdEXrT_nbYHxIS5UXVihP73o0I0XfiGjiMhQx8ShoW3uMnexxsDEWuh0bs9gbCezl3D37emxle");'></div>
+                  <h3 class="font-heading text-lg font-semibold text-text-light dark:text-text-dark mt-2">ข้าวผัดปู</h3>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="border-t border-secondary/20 bg-background-light dark:bg-background-dark/50">
+            <div class="mx-auto max-w-5xl px-4 py-8 md:px-10">
+              <div class="flex flex-col items-center justify-between gap-4 md:flex-row">
+                <p class="text-sm text-text-light dark:text-text-dark">© 2025 ร้านของฉัน อาหารตามสั่ง. สงวนลิขสิทธิ์.</p>
+                <div class="flex flex-col items-center gap-2 md:items-end">
+                  <p class="text-sm text-text-light dark:text-text-dark">123 ถนนสุขุมวิท, กรุงเทพมหานคร 10110</p>
+                  <p class="text-sm text-text-light dark:text-text-dark">โทร: 02-123-4567</p>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

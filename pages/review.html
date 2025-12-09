@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html class="dark" lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>หน้ารีวิว ร้านของฉัน อาหารตามสั่ง</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d42111",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221211",
+          },
+          fontFamily: {
+            "display": ["Work Sans", "Noto Sans", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <!-- TopNavBar -->
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#482623] px-4 sm:px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-6 text-primary">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">ร้านของฉัน อาหารตามสั่ง</h2>
+            </div>
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-white text-sm font-medium leading-normal" href="../index.html">หน้าหลัก</a>
+                <a class="text-white text-sm font-medium leading-normal" href="menu.html">เมนูอาหาร</a>
+                <a class="text-white text-sm font-medium leading-normal" href="about.html">เกี่ยวกับเรา</a>
+                <a class="text-white text-sm font-medium leading-normal" href="contact.html">ติดต่อเรา</a>
+                <a class="text-white text-sm font-medium leading-normal" href="promotion.html">โปรโมชั่น</a>
+                <a class="text-white text-sm font-medium leading-normal" href="review.html">รีวิว</a>
+              </div>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">เขียนรีวิว</span>
+              </button>
+            </div>
+          </header>
+          <main class="flex flex-col gap-8 md:gap-12 mt-8 md:mt-16">
+            <!-- PageHeading -->
+            <div class="flex flex-wrap justify-between gap-3 p-4">
+              <div class="flex min-w-72 flex-col gap-3">
+                <p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">เสียงตอบรับจากลูกค้าของเรา</p>
+                <p class="text-[#c99692] text-base font-normal leading-normal">ลูกค้าจริงคิดอย่างไรกับอาหารตามสั่งของเรา</p>
+              </div>
+            </div>
+            <!-- RatingSummary -->
+            <div class="flex flex-wrap gap-x-8 gap-y-6 p-4">
+              <div class="flex flex-col gap-2">
+                <p class="text-white text-4xl font-black leading-tight tracking-[-0.033em]">4.7</p>
+                <div class="flex gap-0.5">
+                  <span class="material-symbols-outlined text-primary text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[18px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[18px]">star_half</span>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">128 reviews</p>
+              </div>
+              <div class="grid min-w-[200px] max-w-[400px] flex-1 grid-cols-[20px_1fr_40px] items-center gap-y-3">
+                <p class="text-white text-sm font-normal leading-normal">5</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#673732]"><div class="rounded-full bg-primary" style="width: 82%;"></div></div>
+                <p class="text-[#c99692] text-sm font-normal leading-normal text-right">82%</p>
+                <p class="text-white text-sm font-normal leading-normal">4</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#673732]"><div class="rounded-full bg-primary" style="width: 10%;"></div></div>
+                <p class="text-[#c99692] text-sm font-normal leading-normal text-right">10%</p>
+                <p class="text-white text-sm font-normal leading-normal">3</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#673732]"><div class="rounded-full bg-primary" style="width: 5%;"></div></div>
+                <p class="text-[#c99692] text-sm font-normal leading-normal text-right">5%</p>
+                <p class="text-white text-sm font-normal leading-normal">2</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#673732]"><div class="rounded-full bg-primary" style="width: 2%;"></div></div>
+                <p class="text-[#c99692] text-sm font-normal leading-normal text-right">2%</p>
+                <p class="text-white text-sm font-normal leading-normal">1</p>
+                <div class="flex h-2 flex-1 overflow-hidden rounded-full bg-[#673732]"><div class="rounded-full bg-primary" style="width: 1%;"></div></div>
+                <p class="text-[#c99692] text-sm font-normal leading-normal text-right">1%</p>
+              </div>
+            </div>
+            <!-- Reviews -->
+            <div class="flex flex-col gap-8 p-4">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="card-image rounded-full size-10" data-alt="User avatar for Somchai" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDsGqWqpO3UBYiZTAIKs7m7ZAIWnCajxed_9n1mbEf7sQVvkaAXtYzZr6cirNII_uLaYf7O6tUp4sA--2T-AcAfkCgrp0sWDAJIterl_RATxxNOuF6qD0P5hb3rxUpvclfespRMJe9As2x7fieUhwwC_qe_N6MqavqFsHercYqPeZhbyxjHhOpYLKsxRho4QTy0fRm2Mu3yww2VTtmSStfK3naDJJXPnHP2aXlvEfZ1rGiwokY0TwfvRjAK7FC6aAplN6dMpievwGzv");'></div>
+                  <div class="flex-1">
+                    <p class="text-white text-base font-medium leading-normal">สมชาย</p>
+                    <p class="text-[#c99692] text-sm font-normal leading-normal">20/11/2567</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">อาหารตามสั่งที่นี่อร่อยมากครับ ข้าวไข่เจียวอร่อย ไข่ไม่แห้ง น้ำพริกเข้มข้นมาก</p>
+                <div class="flex gap-9 text-[#c99692]">
+                  <button class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-inherit text-[20px] fill-0 font-normal">thumb_up</span>
+                    <p class="text-inherit">15</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-inherit text-[20px] fill-0 font-normal">thumb_down</span>
+                  </button>
+                </div>
+              </div>
+              <hr class="border-[#482623]"/>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="card-image rounded-full size-10" data-alt="User avatar for Jintana" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD_kVdF_kjIcgGnmtwYQTG3mCjj71n75-KjP8CIEQx7vQRT4CQGK85bRCWA3X_caoCfYWLZhaGLGRPZi9guSvCDQUFjOaZH3M89v2bIyn_Xb5yN7SN9mQVFfnFzRJWccaX-hEDw5sIsKjJcMLAVjgE52b1cb01hnMtARQR7UQHx2zQbqhXnE-2UYlfH43nPh8Guup8RALjpcaoxOm1VNiAylMnPavK7h2LlRsoiQpcXKUBqhE1-0I577pAI7wJlTcIsbKqHkSwaYGd3");'></div>
+                  <div class="flex-1">
+                    <p class="text-white text-base font-medium leading-normal">จินตนา</p>
+                    <p class="text-[#c99692] text-sm font-normal leading-normal">18/11/2567</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-[#8c4b45] text-[20px] fill-0 font-normal">star</span>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">พนักงานบริการดีมากค่ะ อาหารได้เร็ว ข้าวผัดปูก็อร่อย หอมกลิ่นพริกไทย</p>
+                <div class="flex gap-9 text-[#c99692]">
+                  <button class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-inherit text-[20px] fill-0 font-normal">thumb_up</span>
+                    <p class="text-inherit">12</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-inherit text-[20px] fill-0 font-normal">thumb_down</span>
+                    <p class="text-inherit">1</p>
+                  </button>
+                </div>
+              </div>
+              <hr class="border-[#482623]"/>
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="card-image rounded-full size-10" data-alt="User avatar for Manee" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6chHoJDFaYSNurweGYeRpf2EpZ6Le3Pw1Nshoyn8brDz2SC3AbgRF4uUeAE3GR_dn5bnAsvjM5fdOoc6Z7H9nXGzmBzI2HcQA5pQiAjK1FM74seqkDYnOo9AYYa-aDYPuwVxgwwypbcBtwDKNRheb8LSMyCrqezZud98MqdgE78EETkjnhOyimUbrsQcBta1sCr4snwmO6VeRNPSrMAvkS-BUw6faoQVn3BZLf1GZH_jkRAY5cNxPvzZ3NbW7HBO5vf8gsBiWxQOi");'></div>
+                  <div class="flex-1">
+                    <p class="text-white text-base font-medium leading-normal">มานี</p>
+                    <p class="text-[#c99692] text-sm font-normal leading-normal">15/11/2567</p>
+                  </div>
+                </div>
+                <div class="flex gap-0.5">
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                  <span class="material-symbols-outlined text-primary text-[20px]">star</span>
+                </div>
+                <p class="text-white text-base font-normal leading-normal">ผัดไทยกุ้งสดที่นี่อร่อยที่สุดในย่านนี้เลยค่ะ หวาน เปรี้ยว ครบรส</p>
+                <div class="flex gap-9 text-[#c99692]">
+                  <button class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-inherit text-[20px] fill-0 font-normal">thumb_up</span>
+                    <p class="text-inherit">8</p>
+                  </button>
+                  <button class="flex items-center gap-2">
+                    <span class="material-symbols-outlined text-inherit text-[20px] fill-0 font-normal">thumb_down</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- SingleButton -->
+            <div class="flex px-4 py-3 justify-center">
+              <button class="flex min-w-[84px] max-w-[480px] w-full sm:w-auto cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">เขียนรีวิวของคุณ</span>
+              </button>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

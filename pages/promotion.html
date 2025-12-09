@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html class="dark" lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>โปรโมชั่น - ร้านของฉัน อาหารตามสั่ง</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600&amp;family=Noto+Serif+Thai:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec1313",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221010",
+            "brand": {
+               "red": "#A52A2A",
+               "gold": "#FFD700",
+               "cream": "#F5F5DC",
+               "charcoal": "#36454F"
+            }
+          },
+          fontFamily: {
+            "display": ["'Noto Serif Thai'", 'serif'],
+            "body": ["'Mitr'", 'sans-serif']
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-body">
+  <div class="relative flex h-auto min-h-screen w-full flex-col bg-[#221111] dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="px-4 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <!-- TopNavBar -->
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#482323] px-4 sm:px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-6 text-[#FFD700]">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-xl font-display font-bold leading-tight tracking-[-0.015em]">ร้านของฉัน อาหารตามสั่ง</h2>
+            </div>
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-white text-base font-medium leading-normal hover:text-[#FFD700] transition-colors" href="../index.html">หน้าหลัก</a>
+                <a class="text-white text-base font-medium leading-normal hover:text-[#FFD700] transition-colors" href="menu.html">เมนูอาหาร</a>
+                <a class="text-white text-base font-medium leading-normal hover:text-[#FFD700] transition-colors" href="about.html">เกี่ยวกับเรา</a>
+                <a class="text-white text-base font-medium leading-normal hover:text-[#FFD700] transition-colors" href="contact.html">ติดต่อเรา</a>
+                <a class="text-[#FFD700] text-base font-bold leading-normal" href="promotion.html">โปรโมชั่น</a>
+                <a class="text-white text-base font-medium leading-normal hover:text-[#FFD700] transition-colors" href="review.html">รีวิว</a>
+              </div>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#A52A2A] hover:bg-red-800 transition-colors text-white text-base font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">สั่งเลย</span>
+              </button>
+            </div>
+            <button class="md:hidden text-white mobile-menu-toggle">
+              <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+          </header>
+          <!-- PageHeading -->
+          <div class="flex flex-wrap justify-between gap-3 p-4 mt-8">
+            <div class="flex min-w-72 flex-col gap-3 text-center w-full">
+              <p class="text-[#FFD700] text-5xl font-display font-black leading-tight tracking-[-0.033em]">โปรโมชั่นพิเศษ</p>
+              <p class="text-[#c99292] text-lg font-normal leading-normal">ข้อเสนอสุดพิเศษสำหรับลูกค้าคนสำคัญของเรา</p>
+            </div>
+          </div>
+          <!-- ImageGrid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 p-4 mt-4">
+            <div class="flex flex-col gap-4 p-4 bg-[#2a1616] rounded-lg border border-[#482323] transition-transform hover:scale-105">
+              <div class="card-image" data-alt="A satisfying meal set with rice, stir-fried vegetables, and a drink" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGC4ZHbysBw3KRArw-h1R61J3N0nezDvXJXP18c1ucbkLqN13t5fw2MxoW7_b_sSqedcf_th61V1HpKqYlVn6e0b1jAvn1nipCUm2AS0nj8kASgDP3KsSNX9ZhU1IqhXI6Ehlba6otF_5HvB1wn5Njx09VvYmUOf_yM2yfmXVmZbpAVfhBLJfmIsrmECO6NXD5HzwEVPjrLFdCwBZ5g0uLe47k6i4Wy4PK65LxeJPiZCGpqCUN5BsVYzQPgWR8gii_3MAbz2H0iAzF");'></div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#FFD700] text-xl font-display font-bold leading-normal">ชุดอิ่มคุ้ม</p>
+                <p class="text-[#c99292] text-base font-normal leading-normal mt-1 mb-4 flex-grow">อร่อยคนเดียวแบบจุกๆ อาหารตามสั่ง 1 อย่าง + ข้าว + ซุป + เครื่องดื่ม</p>
+                <button class="mt-auto w-full flex items-center justify-center rounded-md h-10 px-4 bg-[#A52A2A] hover:bg-red-800 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+                  <span class="truncate">ดูรายละเอียด</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 p-4 bg-[#2a1616] rounded-lg border border-[#482323] transition-transform hover:scale-105">
+              <div class="card-image" data-alt="Two plates of rice dishes, perfect for a couple's meal" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjWnGK2_h7WZ-HXjOXHXSlasSuWNQkUnjufoYw2awjpBi2IyqaJKd3sfrOLbrNlmRAbvmMe6-17Tn7pOEGBTp-3N0rDKoP8I5weB6RIKUprT8Jd91hra5wY7hIyM6GMVSPGw7RVz3STfU8woj3TpsMVyU1dNvNnWLTNnhcKCXDsFxpKcoqKF4oS9Lms_RE9iQJ_DSNh0E8_XBwaSr94AelyQ6o9CNkBikUHw9f6Qq4WrKaIOnLLRL3N5yvDDAsTjC6j0lYL-h_TvTd");'></div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#FFD700] text-xl font-display font-bold leading-normal">มาเป็นคู่สุดคุ้ม</p>
+                <p class="text-[#c99292] text-base font-normal leading-normal mt-1 mb-4 flex-grow">จับคู่ความอร่อย ซื้อ 2 จ่ายน้อยกว่า สำหรับคู่รักหรือเพื่อนซี้</p>
+                <button class="mt-auto w-full flex items-center justify-center rounded-md h-10 px-4 bg-[#A52A2A] hover:bg-red-800 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+                  <span class="truncate">ดูรายละเอียด</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 p-4 bg-[#2a1616] rounded-lg border border-[#482323] transition-transform hover:scale-105">
+              <div class="card-image" data-alt="A clock indicating a happy hour promotion with a delicious dish in the background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtlsIQitRsh-XeWzmzX08doeSaCFt6zoaTFWglxi0i71RIffdWpyQfEj44nMoXum9bIYejvXeuKqTNj-tVT8FlZETnvzzGVSZroYK0TL51TwHWqawogXdX3dkv2Y0l_brvq7p6kQu6-n0wPnlEq65MjDIvrEm0PbZkE275XNrpBjAuPFAhkn_eZMV1dHDQb9U_mL3lX4sHFBPq5xuC_AuAc3JvPsN8pTYOrJCs65B8CSktFiCGJr0Nh8cGy7828y67Rntwk1fjsrkd");'></div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#FFD700] text-xl font-display font-bold leading-normal">Happy Hour</p>
+                <p class="text-[#c99292] text-base font-normal leading-normal mt-1 mb-4 flex-grow">ลดจัดหนักทุกวัน จันทร์-ศุกร์ เวลา 10:00-14:00 น. ลด 20%</p>
+                <button class="mt-auto w-full flex items-center justify-center rounded-md h-10 px-4 bg-[#A52A2A] hover:bg-red-800 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+                  <span class="truncate">ดูรายละเอียด</span>
+                </button>
+              </div>
+            </div>
+            <div class="flex flex-col gap-4 p-4 bg-[#2a1616] rounded-lg border border-[#482323] transition-transform hover:scale-105">
+              <div class="card-image" data-alt="A VIP membership card concept for a special member promotion" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAAgxYUpKRxG9kR6M5a8zg2DyPD8JKqxlIweF9HliKhvsTek6ICExOIZAQCDqReRVt1NEAYPE1xdneWmA1ac5YkwL15S_eCNQssM_XfSLG3v2yqFGYhEbHTEWxmW52Cpp5-Nv1_05aIlGM3F13adP614PhtbTCguGEfvDbVwZ9M-NrV6UWlmEyXgQO9tu9WJEGR7AcQ349Uh4dj08jL3ZZMVVn0eybf1phrMPedCVUw_2NMqlmIs8aCAlv8fA1GUjiILeKYHFMzRT4b");'></div>
+              <div class="flex flex-col flex-grow">
+                <p class="text-[#FFD700] text-xl font-display font-bold leading-normal">โปรสมาชิกสุดพิเศษ</p>
+                <p class="text-[#c99292] text-base font-normal leading-normal mt-1 mb-4 flex-grow">สะสมแต้มทุกการสั่งซื้อ แลกรับส่วนลดและของรางวัลมากมาย</p>
+                <button class="mt-auto w-full flex items-center justify-center rounded-md h-10 px-4 bg-[#A52A2A] hover:bg-red-800 text-white text-base font-bold leading-normal tracking-[0.015em] transition-colors">
+                  <span class="truncate">ดูรายละเอียด</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center mt-12 border-t border-solid border-t-[#482323]">
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-4">
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="../index.html">หน้าแรก</a>
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="menu.html">เมนู</a>
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="about.html">เกี่ยวกับเรา</a>
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="contact.html">ติดต่อเรา</a>
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="promotion.html">โปรโมชั่น</a>
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="review.html">รีวิว</a>
+              <a class="text-[#c99292] text-base font-normal leading-normal hover:text-[#FFD700] transition-colors" href="#">นโยบายความเป็นส่วนตัว</a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-6 mt-4">
+              <a class="text-[#c99292] hover:text-[#FFD700] transition-colors" href="#">
+                <img alt="Facebook logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxcV-dGtCsESJbumOzx4eRHf22yt4W6ITz0Kbes_UQWNNkcIvplOYpOec7F8isjSf_dcVv8CgA55IiSyA8koGjr5GuSzTxfOgXl1iZ3Gfg4nFEMlEI-yjX8fdaV_gQ4HVUncIgDOz7AB4JciR-CGF0pv164drutKRWSvGxqmkta01QjTUo7jEcdbzycbod8W91aFeeiTntMqvoQQH43hKfMF6n7aOP1QvS9M6Kpg2-qDZzbUbX4owN_T9FY7vG-SDPcEcUQAYOuqDq"/>
+              </a>
+              <a class="text-[#c99292] hover:text-[#FFD700] transition-colors" href="#">
+                <img alt="Instagram logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3HOEdBErfYZwooZFI4JNSCw7cBokgHri59xA93eNoayrQVYtFB3hIP4TMRhSzwzNVhEfBaF7iTXduaCyYVXcIGLgHL_IOemi-qgLa2ClV6PojvZZoMYjcANOHo64Z18HZTqr6uxM6yiXO0x41suCrOjRI_gUpgz8SpqDoYQtQ_4vuWGb8rsnBPHmeLZcNTaI27yV204JIgGQ0rEdiqNru0AegHY2QkK9WWaO7YzXsOWQ-tWsk6c-dLf3A9bP9K9UPAnQbz02UOvW7"/>
+              </a>
+              <a class="text-[#c99292] hover:text-[#FFD700] transition-colors" href="#">
+                <img alt="Line app logo" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKw8NUzbL6mMtwBgPxTgWFn1kL3uY1hvflCVzBSAAUtGt2LoN2D0CRn_XNbCVpgv47WMDk9PvMLoab7TI8PyCihE4YGH6K2768aHGxKE40m2yaZuqwXnPxZnh88BsQFQts4YxzeTH7Bw_obvJZvu6PeoMlZC4iIv1_alKEhbln-w1NKdjDa7ek1pQ-apgFVOOh8ps5LrIX_Ip6sDdaXL0_uC4ctWJc_F8pOdav_FqYAQff7IG4fYqDyY8nClbTn6G1-BsoZwN5lxt8"/>
+              </a>
+            </div>
+            <p class="text-[#c99292] text-base font-normal leading-normal mt-4">© 2025 ร้านของฉัน อาหารตามสั่ง. สงวนลิขสิทธิ์.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html class="dark" lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>ติดต่อเรา - ร้านของฉัน อาหารตามสั่ง</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@400;500;600;700&amp;family=Prompt:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    body {
+      font-family: 'Prompt', 'Mitr', sans-serif;
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ec1313",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221010",
+            "brand-red-dark": "#482323",
+            "brand-text-subtle": "#c99292"
+          },
+          fontFamily: {
+            "display": ["Mitr", "Prompt", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+        },
+      }
+    }
+  </script>
+</head>
+<body class="font-display">
+  <div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="px-4 sm:px-8 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <!-- TopNavBar -->
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-brand-red-dark/50 dark:border-brand-red-dark px-4 sm:px-10 py-3">
+            <div class="flex items-center gap-4 text-white">
+              <div class="size-6 text-primary">
+                <svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"></path>
+                </svg>
+              </div>
+              <h2 class="text-black dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">ร้านของฉัน อาหารตามสั่ง</h2>
+            </div>
+            <div class="hidden sm:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-black/80 dark:text-white/80 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="../index.html">หน้าแรก</a>
+                <a class="text-black/80 dark:text-white/80 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="menu.html">เมนู</a>
+                <a class="text-black/80 dark:text-white/80 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="about.html">เกี่ยวกับเรา</a>
+                <a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="contact.html">ติดต่อเรา</a>
+                <a class="text-black/80 dark:text-white/80 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="promotion.html">โปรโมชั่น</a>
+                <a class="text-black/80 dark:text-white/80 text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary" href="review.html">รีวิว</a>
+              </div>
+              <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+                <span class="truncate">โทรเลย</span>
+              </button>
+            </div>
+          </header>
+          <main class="flex flex-col gap-8 md:gap-12 py-8 md:py-16">
+            <!-- PageHeading -->
+            <div class="flex flex-wrap justify-between gap-3 px-4">
+              <div class="flex min-w-72 flex-col gap-2">
+                <p class="text-black dark:text-white text-4xl font-bold leading-tight tracking-[-0.033em]">ติดต่อเรา</p>
+                <p class="text-black/60 dark:text-brand-text-subtle text-base font-normal leading-normal">แผนที่ ที่อยู่ และช่องทางการติดต่อร้าน</p>
+              </div>
+            </div>
+            <!-- Map -->
+            <div class="flex px-4 py-3">
+              <div class="card-image aspect-[16/7] rounded-xl object-cover" data-alt="A map showing the location of the restaurant in a city." data-location="Bangkok, Thailand" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMBbqpDtaIHdUZlLKTt5zJdimUeGpKfSTmVYHszNX8Gs4aqSAdDXuZTcgXdb17ybwBhz9vQxRDF9OdWOgWfKgSaWTx73JTsMPDqy7W5xuKQGa3TKekt0PyRpl-6qBMbxTMIyiA4K6MzjblZN9KXny6Yyr9Wer6qqAoHN51_WTzkkg2qc9Npp-GwnVNCHbi6RfSuaUANtSY7W0ZV2dw-GN6yRiEKbsEdB9zgXlxi4BkoZ6Y8uRzTp7M49x3jZWdMOrJBDk5dhXR-Y-e");'></div>
+            </div>
+            <!-- DescriptionList -->
+            <div class="px-4 grid grid-cols-1 md:grid-cols-[25%_1fr] gap-x-6 gap-y-4">
+              <div class="col-span-1 md:col-span-2 grid grid-cols-subgrid border-t border-t-black/20 dark:border-t-brand-red-dark py-5">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-black/60 dark:text-brand-text-subtle text-xl">location_on</span>
+                  <p class="text-black/60 dark:text-brand-text-subtle text-sm font-medium leading-normal">ที่อยู่:</p>
+                </div>
+                <p class="text-black dark:text-white text-sm font-normal leading-normal">123 ถนนสุขุมวิท แขวงคลองเตย เขตคลองเตย กรุงเทพมหานคร 10110</p>
+              </div>
+              <div class="col-span-1 md:col-span-2 grid grid-cols-subgrid border-t border-t-black/20 dark:border-t-brand-red-dark py-5">
+                <div class="flex items-center gap-2">
+                  <span class="material-symbols-outlined text-black/60 dark:text-brand-text-subtle text-xl">schedule</span>
+                  <p class="text-black/60 dark:text-brand-text-subtle text-sm font-medium leading-normal">เวลาทำการ:</p>
+                </div>
+                <p class="text-black dark:text-white text-sm font-normal leading-normal">เปิดทุกวัน 08:00 - 18:00 น.</p>
+              </div>
+            </div>
+            <!-- ButtonGroup -->
+            <div class="flex justify-center pt-8">
+              <div class="flex flex-1 gap-3 max-w-[480px] flex-col items-stretch px-4 py-3">
+                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] w-full gap-2">
+                  <span class="material-symbols-outlined">call</span>
+                  <span class="truncate">โทร: 02-123-4567</span>
+                </button>
+                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-black/10 dark:bg-brand-red-dark text-black dark:text-white text-base font-bold leading-normal tracking-[0.015em] w-full gap-2">
+                  <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.16a16,16,0,0,0,21,21l33.28-11.35A104,104,0,1,0,128,24Zm41.48,113c-2.3-11.21-14.2-10.15-16.18-10.15-2,0-4,1.4-5.22,3.13s-3.79,4.6-5.22,6.12c-1.43,1.52-2.86,1.62-5.12.51s-11-4-20.89-12.83c-7.73-6.9-12.83-15.32-14.25-18s-1-4.32.71-5.74,3.24-3.79,4.36-5.12,2.13-3.24.91-6.16-10.15-16.18-10.15-16.18-2.64-2.14-5.74-2.24-4.57.1-6.88.1-5.22,1.83-7.53,5.44-8,14.65-2.13,29,6.16,21.5,41.28,52.34,31.43,14,34,16.28S166.75,138,169.48,137Z"></path></svg>
+                  <span class="truncate">เพิ่มเพื่อนใน LINE</span>
+                </button>
+                <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-black/10 dark:bg-brand-red-dark text-black dark:text-white text-base font-bold leading-normal tracking-[0.015em] w-full gap-2">
+                  <svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M232,128a104,104,0,0,1-155,91.23V152H56V112h21V81.09c0-29.32,11.5-46.09,48.24-46.09a205.8,205.8,0,0,1,28.26,2.5V72H139.5c-9.75,0-11.5,5.63-11.5,12.5V112h32l-5.12,40H128v67.23A104,104,0,0,1,232,128Z"></path></svg>
+                  <span class="truncate">ดู Facebook Page</span>
+                </button>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>

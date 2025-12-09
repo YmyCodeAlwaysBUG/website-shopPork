@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="dark" lang="th">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>เมนู - ร้านของฉัน อาหารตามสั่ง</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <style>
+    body {
+      font-family: 'Prompt', sans-serif;
+    }
+  </style>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d41121",
+            "background-light": "#f8f6f6",
+            "background-dark": "#221012",
+          },
+          fontFamily: {
+            "display": ["Prompt", "sans-serif"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+  <div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+      <div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+        <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+          <header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#482326] px-4 sm:px-10 py-3">
+            <div class="flex items-center gap-4 text-[#FFD700]">
+              <div class="size-6">
+                <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+                </svg>
+              </div>
+              <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">ร้านของฉัน อาหารตามสั่ง</h2>
+            </div>
+            <div class="hidden md:flex flex-1 justify-end gap-8">
+              <div class="flex items-center gap-9">
+                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="../index.html">หน้าแรก</a>
+                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="menu.html">เมนู</a>
+                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="about.html">เกี่ยวกับเรา</a>
+                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="contact.html">ติดต่อเรา</a>
+                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="promotion.html">โปรโมชั่น</a>
+                <a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="review.html">รีวิว</a>
+              </div>
+            </div>
+          </header>
+          <main class="flex-grow">
+            <h1 class="text-white tracking-light text-[32px] font-bold leading-tight px-4 text-center pb-3 pt-12">เมนูแนะนำจากทางร้าน</h1>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4">
+              <div class="flex flex-col gap-3 pb-3 bg-[#2a1617] rounded-lg overflow-hidden border border-[#482326] transition-shadow hover:shadow-lg hover:shadow-primary/20">
+                <div class="card-image" data-alt="Pad Thai with shrimp" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDaf2NJ9h7HJI6-xV7t1TSB8gmpiR98Qwcq0bdrXST_gcn-9oCaeX-NpnjEcoWPrQX03QAi369voX0zheOecWLFSHH_8jB0lh5SyMB4AVmj-IAzyG4UIFPp8dFGMP56t3BDO_t0Tg-vfze5DtvcUQsShNd7Y61lUZdg9ViC04u4ZkVGyi595NBAiKQd1olm9aQMSASLDHG3YVYEZbczvhgWG87thalAyIPTJJt1Y17dm3bIlYod60zH2fiSBPZpzU9ERQhPaIKAyB9R");'></div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <p class="text-white text-xl font-medium leading-normal">ผัดไทยกุ้งสด</p>
+                  <p class="text-[#FFD700] text-lg font-bold leading-normal">60 บาท</p>
+                  <p class="text-[#c99296] text-sm font-normal leading-normal mt-2 mb-4 flex-grow">ผัดไทยกุ้งสด หวาน เปรี้ยว กลมกล่อม</p>
+                  <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full" href="#">
+                    <span class="truncate">สั่งเลย</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 bg-[#2a1617] rounded-lg overflow-hidden border border-[#482326] transition-shadow hover:shadow-lg hover:shadow-primary/20">
+                <div class="card-image" data-alt="Fried rice with egg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtW-nOFcNeIPfzX65njjOLnpZoD9OUKbCdHifLgKsQ3wYiV1NUEh8YPIBa_fVUieVPfGTP-NVsieAP5Hb5a39m-XCrWE8l9kbmnORuWUnwfv3g7pmtLACBkI6e95eKYy7nJcm4l74-srFwvQOBwLI721QItdEL_s6imrKQsAQ6uabgLTtPlJs61utvwE982PMQXCjy5o5hmNovydPIiSi7Jr6ENanPFiZQ_j0TCCXhDLhsWJLy5RC-kIoOTF4or2SMV7qA577-BCss");'></div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <p class="text-white text-xl font-medium leading-normal">ข้าวไข่เจียว</p>
+                  <p class="text-[#FFD700] text-lg font-bold leading-normal">50 บาท</p>
+                  <p class="text-[#c99296] text-sm font-normal leading-normal mt-2 mb-4 flex-grow">ข้าวสวย ไข่เจียวกรอบ ราดน้ำพริกแกง</p>
+                  <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full" href="#">
+                    <span class="truncate">สั่งเลย</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 bg-[#2a1617] rounded-lg overflow-hidden border border-[#482326] transition-shadow hover:shadow-lg hover:shadow-primary/20">
+                <div class="card-image" data-alt="Fried rice with crab meat" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB_Jgn6utkWYHBv8gFz2ez7ZZX0ZttgJ_VXi9jtb0k2sbXtyN4gLcIdkxEad4iHl7ANIOtC5GE2-A5A1DRMd_yBIDHwNZvoACWmfhR_au6zy1qxU6MlABpkqjXwcy7LvEPlBsqK-2g-YfXMv8tpQATMehhEXyXhIslu2p0KxDTKQoZGyCC9hh4FJUJ5tGfGV9NdGefdEXrT_nbYHxIS5UXVihP73o0I0XfiGjiMhQx8ShoW3uMnexxsDEWuh0bs9gbCezl3D37emxle");'></div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <p class="text-white text-xl font-medium leading-normal">ข้าวผัดปู</p>
+                  <p class="text-[#FFD700] text-lg font-bold leading-normal">70 บาท</p>
+                  <p class="text-[#c99296] text-sm font-normal leading-normal mt-2 mb-4 flex-grow">ข้าวผัดกับเนื้อปูแท้ หอมกลิ่นพริกไทย</p>
+                  <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full" href="#">
+                    <span class="truncate">สั่งเลย</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 bg-[#2a1617] rounded-lg overflow-hidden border border-[#482326] transition-shadow hover:shadow-lg hover:shadow-primary/20">
+                <div class="card-image" data-alt="Tom yum soup with shrimp" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAMBbqpDtaIHdUZlLKTt5zJdimUeGpKfSTmVYHszNX8Gs4aqSAdDXuZTcgXdb17ybwBhz9vQxRDF9OdWOgWfKgSaWTx73JTsMPDqy7W5xuKQGa3TKekt0PyRpl-6qBMbxTMIyiA4K6MzjblZN9KXny6Yyr9Wer6qqAoHN51_WTzkkg2qc9Npp-GwnVNCHbi6RfSuaUANtSY7W0ZV2dw-GN6yRiEKbsEdB9zgXlxi4BkoZ6Y8uRzTp7M49x3jZWdMOrJBDk5dhXR-Y-e");'></div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <p class="text-white text-xl font-medium leading-normal">ต้มยำกุ้ง</p>
+                  <p class="text-[#FFD700] text-lg font-bold leading-normal">80 บาท</p>
+                  <p class="text-[#c99296] text-sm font-normal leading-normal mt-2 mb-4 flex-grow">ต้มยำกุ้งแม่น้ำ รสแซ่บ กลมกล่อม</p>
+                  <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full" href="#">
+                    <span class="truncate">สั่งเลย</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 bg-[#2a1617] rounded-lg overflow-hidden border border-[#482326] transition-shadow hover:shadow-lg hover:shadow-primary/20">
+                <div class="card-image" data-alt="Green curry with chicken" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGC4ZHbysBw3KRArw-h1R61J3N0nezDvXJXP18c1ucbkLqN13t5fw2MxoW7_b_sSqedcf_th61V1HpKqYlVn6e0b1jAvn1nipCUm2AS0nj8kASgDP3KsSNX9ZhU1IqhXI6Ehlba6otF_5HvB1wn5Njx09VvYmUOf_yM2yfmXVmZbpAVfhBLJfmIsrmECO6NXD5HzwEVPjrLFdCwBZ5g0uLe47k6i4Wy4PK65LxeJPiZCGpqCUN5BsVYzQPgWR8gii_3MAbz2H0iAzF");'></div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <p class="text-white text-xl font-medium leading-normal">แกงเขียวหวานไก่</p>
+                  <p class="text-[#FFD700] text-lg font-bold leading-normal">75 บาท</p>
+                  <p class="text-[#c99296] text-sm font-normal leading-normal mt-2 mb-4 flex-grow">แกงเขียวหวานไก่ หอมกลิ่นเครื่องแกง</p>
+                  <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full" href="#">
+                    <span class="truncate">สั่งเลย</span>
+                  </a>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3 pb-3 bg-[#2a1617] rounded-lg overflow-hidden border border-[#482326] transition-shadow hover:shadow-lg hover:shadow-primary/20">
+                <div class="card-image" data-alt="Stir-fried morning glory with garlic" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDjWnGK2_h7WZ-HXjOXHXSlasSuWNQkUnjufoYw2awjpBi2IyqaJKd3sfrOLbrNlmRAbvmMe6-17Tn7pOEGBTp-3N0rDKoP8I5weB6RIKUprT8Jd91hra5wY7hIyM6GMVSPGw7RVz3STfU8woj3TpsMVyU1dNvNnWLTNnhcKCXDsFxpKcoqKF4oS9Lms_RE9iQJ_DSNh0E8_XBwaSr94AelyQ6o9CNkBikUHw9f6Qq4WrKaIOnLLRL3N5yvDDAsTjC6j0lYL-h_TvTd");'></div>
+                <div class="p-4 flex flex-col flex-grow">
+                  <p class="text-white text-xl font-medium leading-normal">ผัดคะน้าหมูกรอบ</p>
+                  <p class="text-[#FFD700] text-lg font-bold leading-normal">65 บาท</p>
+                  <p class="text-[#c99296] text-sm font-normal leading-normal mt-2 mb-4 flex-grow">ผักคะน้ากรอบ หมูกรอบกรุบ รสชาติกลมกล่อม</p>
+                  <a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary hover:bg-primary/90 text-white text-sm font-bold leading-normal tracking-[0.015em] w-full" href="#">
+                    <span class="truncate">สั่งเลย</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="flex flex-col gap-6 px-5 py-10 text-center border-t border-solid border-t-[#482326] mt-10">
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+              <a class="text-[#c99296] hover:text-white text-base font-normal leading-normal min-w-40" href="../index.html">หน้าแรก</a>
+              <a class="text-[#c99296] hover:text-white text-base font-normal leading-normal min-w-40" href="menu.html">เมนู</a>
+              <a class="text-[#c99296] hover:text-white text-base font-normal leading-normal min-w-40" href="about.html">เกี่ยวกับเรา</a>
+              <a class="text-[#c99296] hover:text-white text-base font-normal leading-normal min-w-40" href="contact.html">ติดต่อเรา</a>
+              <a class="text-[#c99296] hover:text-white text-base font-normal leading-normal min-w-40" href="promotion.html">โปรโมชั่น</a>
+              <a class="text-[#c99296] hover:text-white text-base font-normal leading-normal min-w-40" href="review.html">รีวิว</a>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+              <a class="text-[#c99296] hover:text-white" href="#">
+                <span class="material-symbols-outlined">social_leaderboard</span>
+              </a>
+              <a class="text-[#c99296] hover:text-white" href="#">
+                <span class="material-symbols-outlined">photo_camera</span>
+              </a>
+              <a class="text-[#c99296] hover:text-white" href="#">
+                <span class="material-symbols-outlined">call</span>
+              </a>
+            </div>
+            <p class="text-[#c99296] text-sm font-normal leading-normal">© 2025 ร้านของฉัน อาหารตามสั่ง. สงวนลิขสิทธิ์.</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
